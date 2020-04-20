@@ -4,4 +4,4 @@
     jcr:description="Apple Tag Search Page"
     jcr:primaryType="cq:Component"
     jcr:title="Apple Tag Search Component"
-    componentGroup="We.Retail"/>
+    componentGroup="apple.Content"/>
