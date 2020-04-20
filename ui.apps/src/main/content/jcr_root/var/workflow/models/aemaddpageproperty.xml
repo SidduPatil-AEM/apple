@@ -24,7 +24,7 @@
             type="PROCESS">
             <metaData
                 jcr:primaryType="nt:unstructured"
-                PROCESS="com.adobe.aem.guides.wkndevents.core.models.impl.CustomStep"
+                PROCESS="com.apple.assignment.core.workflows.AddPropertyToPageCreatedWorkflow"
                 PROCESS_AUTO_ADVANCE="true"/>
         </node1>
         <node2

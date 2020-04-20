@@ -9,7 +9,7 @@
     eventType="{Long}1"
     excludeList=""
     features="[]"
-    glob="/content/we-retail/us/en"
+    glob="/content/apple/us/en"
     nodetype="cq:Page"
     runModes="author"
     workflow="/var/workflow/models/aemaddpageproperty"/>
