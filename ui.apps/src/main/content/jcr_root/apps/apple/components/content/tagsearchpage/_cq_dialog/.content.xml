@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Title"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <showMiniCart
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        fieldDescription="Controls whether the shopping cart should be rendered in view mode."
+                        name="./isReadOnly"
+                        text="Disable cart entry updates."
+                        value="true"/>
+                    <tags
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                        allowBulkEdit="{Boolean}true"
+                        autocreateTag="{Boolean}true"
+                        fieldLabel="Tags"
+                        multiple="{Boolean}true"
+                        name="./cq:tags">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-msm-lockable="cq:tags"/>
+                    </tags>
+                    <tagsShowOnCreate
+                        cq:hideOnEdit="{Boolean}true"
+                        cq:showOnCreate="{Boolean}true"
+                        granite:comment="Handled by a custom POST servlet for the Create Page case"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                        fieldLabel="Tags"
+                        multiple="{Boolean}true"
+                        name="./cq:tags"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

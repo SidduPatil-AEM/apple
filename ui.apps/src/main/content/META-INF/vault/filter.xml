@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/apple"/>
+	<filter root="/var/workflow/models"/>
+	<filter root="/conf/global/settings/workflow/launcher"/>
+	<filter root="/conf/global/settings/workflow/models"/>
+</workspaceFilter>
