@@ -16,7 +16,7 @@ import com.apple.assignment.core.service.impl.TagSearchService;
 
 
 @Model(adaptables = Resource.class)
-public class TagSearch {
+public class TagSearchModel {
 
 	private String[] tagPageList;
 
@@ -29,7 +29,7 @@ public class TagSearch {
 	private TagSearchService tagSearchService;
 
 	@Inject
-	public TagSearch(@Optional @Named("cq:tags") String[] tagPageList) {
+	public TagSearchModel(@Optional @Named("cq:tags") String[] tagPageList) {
 		this.tagPageList = tagPageList;
 	}
 
