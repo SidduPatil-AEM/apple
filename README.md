@@ -1,4 +1,4 @@
-# Apple AEM Assignment project built on AEM 6.5
+## AEM Assignment project built on AEM 6.5
 
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
 
