@@ -5,7 +5,7 @@
         cq:allowedTemplates="[/conf/apple/settings/wcm/templates/.*]"
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="apple"
+        jcr:title="Apple"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"
