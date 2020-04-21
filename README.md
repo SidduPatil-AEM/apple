@@ -1,4 +1,4 @@
-# Sample AEM project template
+# Apple AEM Assignment project built on AEM 6.5
 
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
 
@@ -41,7 +41,7 @@ The project comes with the auto-public repository configured. To setup the repos
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
 	
-## Create System User
+## Create System User (tagQueryService)
 
 System users help us play with the aem reources, make changes and commmit it programmatically. Creating a system user involves couple of steps, the same is illustrated below.
 
@@ -49,10 +49,9 @@ Step 1:: Access crx explorer from the link http://localhost:4502/crx/explorer/in
 
 Step 2:: In order to create system user, you should have logged in with the Administrators credentials. Click on login on the crx explorer dashboard.
 
-Step 3:: Click the option called "User Administartion". This now opens up a new window , Click "Create system user" to create one.
+Step 3:: Click the option called "User Administartion". This now opens up a new window , Click "Create system user" to create one(tagQueryService).
 
 Step 4::  Fill the details :: User iD -> system (tagQueryService).
-Enter the intermediate path: /home/users/system
 
 Step 5:: Select the small green tick to complete the step.
 
@@ -64,3 +63,4 @@ Step 3:: Select your user and go to Permissions Tab.
 Step 4:: Provide full access to /content folder. By selecting all check box against content row. You can ignore replicate checkbox as we don’t want this user for replication.
 Step 5:: Click on save.
 
+URL reference -	http://www.aemcq5tutorials.com/tutorials/create-system-user-in-aem/
