@@ -35,24 +35,32 @@ Or to deploy only the bundle to the author, run
 
     mvn clean install -PautoInstallBundle
 
-## Testing
-
-There are three levels of testing contained in the project:
-
-* unit test in core: this show-cases classic unit testing of the code contained in the bundle. To test, execute:
-
-    mvn clean test
-
-* server-side integration tests: this allows to run unit-like tests in the AEM-environment, ie on the AEM server. To test, execute:
-
-    mvn clean verify -PintegrationTests
-
-* client-side Hobbes.js tests: JavaScript-based browser-side tests that verify browser-side behavior. To test:
-
-    in the browser, open the page in 'Developer mode', open the left panel and switch to the 'Tests' tab and find the generated 'MyName Tests' and run them.
-
 ## Maven settings
 
 The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+	
+## Create System User
+
+System users help us play with the aem reources, make changes and commmit it programmatically. Creating a system user involves couple of steps, the same is illustrated below.
+
+Step 1:: Access crx explorer from the link http://localhost:4502/crx/explorer/index.jsp.
+
+Step 2:: In order to create system user, you should have logged in with the Administrators credentials. Click on login on the crx explorer dashboard.
+
+Step 3:: Click the option called "User Administartion". This now opens up a new window , Click "Create system user" to create one.
+
+Step 4::  Fill the details :: User iD -> system (tagQueryService).
+Enter the intermediate path: /home/users/system
+
+Step 5:: Select the small green tick to complete the step.
+
+As a pre-requisite lets first add permission to our tagQueryService . Lets consider we want this system user for content editing usage.
+
+Step 1:: Navigate to User Admin Console.
+Step 2:: Search for your user (tagQueryService).
+Step 3:: Select your user and go to Permissions Tab.
+Step 4:: Provide full access to /content folder. By selecting all check box against content row. You can ignore replicate checkbox as we don’t want this user for replication.
+Step 5:: Click on save.
+
